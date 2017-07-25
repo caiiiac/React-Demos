@@ -10,9 +10,9 @@
 		<div id='example'></div>
 		<script type="text/babel">
 			var MyTitle = React.createClass ({
-				<!-- propTypes : {
+				propTypes : {
 					title: React.PropTypes.string.isRequired,
-				}, -->
+				},
 				getDefaultProps : function() {
 					return {
 						title : 'Hello World'
@@ -26,10 +26,12 @@
 			var data = 123;
 
 			ReactDOM.render(
-				<!-- <MyTitle title={data} />, -->
+				
 				<MyTitle />,
 				document.getElementById('example')
 			);
 		</script>
 	</body>
 </html>
+
+<!-- <MyTitle title={data} />, -->
